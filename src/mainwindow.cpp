@@ -9,6 +9,9 @@ MainWindow::MainWindow(QWindow *parent) :
     QQmlContext *context = rootContext();
     context->setContextProperty("vm",mainObject);
 
+
+
+
     //注册组件到QML
    // qmlRegisterType<MainObject>("MainObject", 1, 0, "MainObject");
     setSource(QUrl::fromLocalFile("../../qml/main.qml"));
@@ -18,6 +21,10 @@ MainWindow::MainWindow(QWindow *parent) :
     //setOpacity(0.8);
     show();
     mainItem = qobject_cast<QQuickItem *>(this->rootObject());
+    mainItem->setProperty("sd",1);
+
+
+
 
     setUiState(EV_STATE_DISCONNECT);
 

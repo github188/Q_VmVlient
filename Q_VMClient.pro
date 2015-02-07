@@ -1,5 +1,4 @@
 CONFIG += warnon
-
 QT += qml quick sql
 
 
@@ -27,7 +26,8 @@ SOURCES += \
     src/mainwindow.cpp \
     src/vmc/vmcmainflow.cpp \
     src/mainobject.cpp \
-    src/sql/vmsql.cpp
+    src/sql/vmsql.cpp \
+    src/sql/productobject.cpp
 
 DISTFILES += \
     qml/main.qml \
@@ -48,4 +48,5 @@ HEADERS += \
     src/vmc/vmcmainflow.h \
     src/vmc/EVprotocol.h \
     src/mainobject.h \
-    src/sql/vmsql.h
+    src/sql/vmsql.h \
+    src/sql/productobject.h

@@ -7,6 +7,7 @@ Rectangle {
     property VMWidget curPage:vmFaultPage
     property VMWidget lastPage:vmFaultPage
 
+
     //1.广告页面
     VMAdsPage{
         id:ads_page
@@ -59,7 +60,7 @@ Rectangle {
 
             onButton_pay_clicked:{
                 vmPageSwitch(vmPayPage);
-                vm.vmcpaySlot(1,11,1,0)
+                vm.vmcpaySlot(1,11,1,0)                
             }
         }
 
@@ -86,6 +87,8 @@ Rectangle {
             back_req()
         }
     }
+
+
 
 
     //返回函数
@@ -129,6 +132,12 @@ Rectangle {
         }
 
     }
+
+
+
+
+
+
 
 
 }
